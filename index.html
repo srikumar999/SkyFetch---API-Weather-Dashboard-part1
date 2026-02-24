@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyFetch - Weather Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <h1 class="title">SkyFetch</h1>
+      <p class="subtitle">Live Weather Dashboard</p>
+
+      <div class="card">
+        <h2 id="cityName">Loading...</h2>
+
+        <div class="weather-row">
+          <img id="weatherIcon" alt="Weather Icon" />
+          <div>
+            <p id="temp">--°C</p>
+            <p id="desc">--</p>
+          </div>
+        </div>
+
+        <p id="error" class="error"></p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
